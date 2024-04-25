@@ -1,3 +1,3 @@
 # Releases
 
-Repository for storing TheParasiteProject releases for devices that we supports.
+Repository for storing [TheParasiteProject](https://github.com/TheParasiteProject) releases for devices that we supports.
