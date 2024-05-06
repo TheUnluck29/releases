@@ -2,67 +2,38 @@
 
 ### 05-06-2024
 
-#### build/make
-
-* 315c133  build: Use custom brand prop when add project banner  [someone5678]
-* a35fa6f  build: Generify custom project info props  [someone5678]
-
 #### device/sony/sm8550-common
 
+* 64f486a  sm8550-common: configs: audio: Sync hotword input to primary input  [someone5678]
 * 50a562b  sm8550-common: Build Kprofiles as LKM  [someone5678]
 * 1f6aa38  sm8550-common: overlay: Add Sony's public vendor platform signature  [someone5678]
-* 0b1d6ba  sm8550-common: Enable puffdiff for ota compression  [someone5678]
-* 107850a  sm8550-common: Enable zucchini for ota compression  [someone5678]
-* 564e045  sm8550-common: Setup sim restart shell script  [egaunnac]
-* a3052f4  sm8550-common: update sf related props  [SGCMarkus]
-* 7ae5895  sm8550-common: Setup additional options for ota  [someone5678]
-* 4e48be9  sm8550-common: BOARD_CHARGER_ENABLE_SUSPEND becomes ro.charger.enable_suspend  [Redick Lin]
-* 92450f6  sm8550-common: Include mainline common board config  [someone5678]
-* 26f169d  sm8550-common: Enable watchdog timeout loop breaker  [someone5678]
-* 76dfa99  sm8550-common: props: Sync suspend properties to gs201  [someone5678]
-* 06d7ac6  sm8550-common: Reduce shutdown wait time to 0 sec  [someone5678]
-* 0c7f1f2  sm8550-common: properties: Disable continuous transaction tracing on all build types  [SamarV-121]
-* d0ec906  sm8550-common: Force device to treat 170M as sRGB in SF  [Alec Mouri]
-* bd79039  sm8550-common: props: Switch to AutoSingleLayer Android 13 Setting  [johnmart19]
-* 5392703  sm8550-common: props: Enable incremental FS feature.  [P.Adarsh Reddy]
-* 3672160  sm8550-common: properties: Disable Async MTE on System Server  [Vinay Verma]
-* 4649550  sm8550-common: properties: Kill off IMS logspam with fire  [Adithya R]
-* 3017418  sm8550-common: Remove FM Tuner from audio input devices  [iovxw]
-* 2d39292  fixup! sm8550-common: configs: audio: Add hotword input for hotword mic concurrency  [someone5678]
-* b327c1b  sm8550-common: configs: audio: Add hotword input for hotword mic concurrency  [Jasmine Cha]
-* 90f087d  sm8550-common: Don't set ro.com.android.dataroaming  [someone5678]
-* e44499f  update-sha1sums: Also recognize '- From' as needSHA1  [someone5678]
-* 9081190  sm8550-common: Update ERoFS LZ4HC compression rate to 12  [someone5678]
-* f5c1988  sm8550-common: Add 34 to PRODUCT_EXTRA_VNDK_VERSIONS  [someone5678]
-* 95f907a  sm8550-common: Set VNDK versions  [someone5678]
-* f05da0a  sm8550-common: Patch configs to drop NFC logging levels  [LuK1337]
-* 77b5d9e  sm8550-common: Allow extracting only firmware images  [Bruno Martins]
-* 1ff4340  sm8550-common: Add firmware extraction support  [Michael Bestas]
-* 1c73739  Revert "sm8550-common: Build powershare HAL"  [someone5678]
-* fa19341  Revert "sm8550-common: Configure common Powershare HIDL"  [someone5678]
+
+#### frameworks/base
+
+* dbd9934  CameraServiceProxy: fix exception  [Dmitrii]
+* cdc1d93  fwb: silence more spam  [Dmitrii]
+* 1131776  Fix "Manage App & Content access" for profiles  [Tommy Webb]
+* daa5a78  Keyguard: Hide battery indication on battery-less devices  [Bruno Martins]
 
 #### kernel/sony/sm8550
 
 * 25d36b0  configs: pdx234: Build KProfiles as LKM  [someone5678]
-* 7a11d62  drivers: misc: Import KernelSU  [someone5678]
 
 #### packages/apps/BtHelper
 
-* 99ad926  BtHelper: Run google-java-format as AOSP format  [someone5678]
-* 52ca8ed  Format  [someone5678]
-* fa72254  BtHelper: Bring back vendor-specific event  [someone5678]
+* d4969dd  BtHelper: Run google-java-format as AOSP format  [someone5678]
+* c008d35  BtHelper: Bring back vendor-specific event  [someone5678]
 
 #### packages/apps/Settings
 
-* bdc574d  Settings: RomCardView: Use SystemUI icon as rom logo  [someone5678]
-* 23d13e2  Settings: Generify custom project info props  [someone5678]
+* ad2c949  Settings: RomCardView: Use SystemUI icon as rom logo  [someone5678]
+* 63c14ca  Settings: Generify custom project info props  [someone5678]
 
 #### packages/apps/Updater
 
-* 6be1ce8  Updater: Adapt updates url to this project  [someone5678]
-* ce123f9  Updater: Generify custom project info  [someone5678]
-* 04c80bb  Updater: Use system fonts  [someone5678]
-* 68b4812  Updater: Update resources  [someone5678]
+* 193ce2f  Updater: Use ro.build.version.release_or_preview_display as PROP_BUILD_VERSION  [someone5678]
+* 4529fdf  Updater: Adapt updates url to this project  [someone5678]
+* ee08a55  Updater: Generify custom project info  [someone5678]
 
 #### system/core
 
@@ -76,60 +47,47 @@
 
 #### vendor/aosp
 
-* 5bf58ce  vendor: Guard Updater  [someone5678]
-* 8a49857  vendor: Guard Aperture camera app and overlays  [someone5678]
-* 2e6ce5c  vendor: Set release type  [someone5678]
-* 3271e7f  vendor: Notify after changelog generation done  [someone5678]
-* 5fa73d2  vendor: build: Generate changelog file after build  [someone5678]
-* d446d66  vendor: Adapt ota helper scripts to this project  [someone5678]
-* 69cae25  tools: Add script to get dexopt profiles off device  [mydongistiny]
-* 13f0c19  tools: Get JSON generator script pass through shellcheck and shfmt  [Albert I]
-* 5418e6d  tools: Use here-document instead of multiple echoes  [Albert I]
-* 168e533  tools: Improve grabbing build time value  [Albert I]
-* 9e124ea  tools: Use SHA-256 checksum obtained from `.sha256sum` file  [Albert I]
-* c573501  vendor: Fix scripts for `$OUT_DIR` users  [Albert I]
-* 23d34af  vendor: tools: Fix datetime  [Aman Singh]
-* 18de964  vendor: tools: Fixup datetime  [FrosT2k5]
-* 45a1438  vendor: tools: Use sha256 checksum for json generator  [NurKeinNeid]
-* 6c794f2  vendor: tools: rename .json to the device codename  [FrosT2k5]
-* 2e49bce  vendor: tools: Rewrite json generator script  [Ido Ben-Hur]
-* 330b758  vendor: tools: Make json generator add new lines  [Ido Ben-Hur]
-* d79eeab  vendor: tools: Make the generator follow the OTA format  [Stallix]
-* 5f6789a  vendor: tools: Fixed JSON file_size parsing  [あきと ミズキト]
-* b59f472  vendor: tools: Make the generator suit the current OTA system needs  [Akito Mizukito]
-* 3d00af4  vendor: tools: Generate OTA variables  [abhinavgupta371]
-* 0276814  vendor: build: Generate json file with zip info after build  [Henrique Silva]
-* dbea0e5  tools: update changelog script and prettify  [sb6596]
-* a0ab812  vendor: Fix changelog with broken repo forall -p  [SpiritCroc]
-* fa946f6  tools: Sanitize changelog script  [SagarMakhar]
-* 8c256cf  vendor: Fix changelog generation after repo tool update  [Lup Gabriel]
-* 7393fc6  changelog: Don't call color  [Shubham Singh]
-* 720e5f7  vendor: Make changelog more informative and change separator  [pcarenza]
-* 4413a0b  vendor: Add changelog generator  [johnnyslt]
-* af31c5f  vendor: Generify custom project info props  [someone5678]
+* d64baef  vendor: tools: Use ro.build.version.release_or_preview_display as version  [someone5678]
+* 4e6ef54  vendor: tools: Don't hardcode romtype when generating json  [someone5678]
+* ad47a43  vendor: Guard Updater  [someone5678]
+* 3ad8c85  vendor: Guard Aperture camera app and overlays  [someone5678]
+* a3919b8  vendor: Set release type  [someone5678]
+* 9846ca7  vendor: Notify after changelog generation done  [someone5678]
+* 37fa0bf  vendor: build: Generate changelog file after build  [someone5678]
+* 40b1e18  vendor: Adapt ota helper scripts to this project  [someone5678]
+* d9e3d0e  tools: Add script to get dexopt profiles off device  [mydongistiny]
+* 275c3ab  tools: Get JSON generator script pass through shellcheck and shfmt  [Albert I]
+* c7e9d2c  tools: Use here-document instead of multiple echoes  [Albert I]
+* b78e31b  tools: Improve grabbing build time value  [Albert I]
+* b6e5f43  tools: Use SHA-256 checksum obtained from `.sha256sum` file  [Albert I]
+* 8ae0f35  vendor: Fix scripts for `$OUT_DIR` users  [Albert I]
+* 893149d  vendor: tools: Fix datetime  [Aman Singh]
+* 898b713  vendor: tools: Fixup datetime  [FrosT2k5]
+* 8e2e487  vendor: tools: Use sha256 checksum for json generator  [NurKeinNeid]
+* 44e6a49  vendor: tools: rename .json to the device codename  [FrosT2k5]
+* eed4fb7  vendor: tools: Rewrite json generator script  [Ido Ben-Hur]
+* fb8476b  vendor: tools: Make json generator add new lines  [Ido Ben-Hur]
+* db3cb24  vendor: tools: Make the generator follow the OTA format  [Stallix]
+* 34f3592  vendor: tools: Fixed JSON file_size parsing  [あきと ミズキト]
+* 7ff5c14  vendor: tools: Make the generator suit the current OTA system needs  [Akito Mizukito]
+* 40691c8  vendor: tools: Generate OTA variables  [abhinavgupta371]
+* 7ac193e  vendor: build: Generate json file with zip info after build  [Henrique Silva]
+* 70950e8  tools: update changelog script and prettify  [sb6596]
+* 5aae01a  vendor: Fix changelog with broken repo forall -p  [SpiritCroc]
+* c741815  tools: Sanitize changelog script  [SagarMakhar]
+* 66b5da9  vendor: Fix changelog generation after repo tool update  [Lup Gabriel]
+* cae07ac  changelog: Don't call color  [Shubham Singh]
+* 73d4478  vendor: Make changelog more informative and change separator  [pcarenza]
+* 773b9d8  vendor: Add changelog generator  [johnnyslt]
+* d4445c5  vendor: Generify custom project info props  [someone5678]
 * 3878b27  vendor: Revert AOSP recovery flashing prop name to persist.vendor.recovery_update  [someone5678]
-* b7c9bf2  vendor: overlay: Set default camera app to Aperture in multiple GApps  [someone5678]
-* 59896ef  vendor: Migrate vendor.camera.aux.packagelist to sdk overlay  [Ivan Vecera]
-* 30acec3  vendor: Opt-in to shipping full recovery image by default  [Jarl-Penguin]
-* d60a94f  Revert "config: BoardConfigReservedSize: Prevent overlayfs on remount"  [LuK1337]
-* 2e89078  vendor: Move EXCLUDE_SYSTEMUI_TESTS to optimisation.mk  [someone5678]
-* 3bf3979  vendor: Also disable ro.adb.secure.recovery on eng build  [someone5678]
-* 295c9d8  vendor: PRODUCT_SYSTEM_DEFAULT_PROPERTIES -> PRODUCT_SYSTEM_PROPERTIES  [someone5678]
-* 9f511e8  vendor: apps: Build Updater  [someone5678]
-* c0260a7  Revert "Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC"  [Bruno Martins]
-* 2bd283d  config: BoardConfigReservedSize: Prevent overlayfs on remount  [Nolen Johnson]
-* e6b0801  fixup! vendor: art: Add back dex preopt for AOSP FW  [someone5678]
-* b7da60c  apns-conf: Update Vodafone RO mcc="226" mnc="01"  [Ido Ben-Hur]
-* c2cbfae  apn: Add "Samantel" and "Shatelmobile" APNs  [Mohammad Sajad Asadollahi]
-* ccc2f2d  config: Enable settings large screen optimization for tablets  [LuK1337]
-* 232676b  vendor: Disable debugs infos on user build only  [someone5678]
-* 3fd67ee  statix: Reduce system server verbosity  [Mathieu Chartier]
-* a1262a0  vendor: overlay: fmapp2: Correct location  [someone5678]
-* 6552d91  envsetup: cloremote: build got moved to build_repo  [Alexander Martinz]
-* 4dc51f7  vendor: Add aconfig flags extension for AP1A  [danielml]
-* b982bc7  vendor: Set TARGET_RELEASE  [someone5678]
 
 ### 05-05-2024
+
+#### build/make
+
+* 315c133  build: Use custom brand prop when add project banner  [someone5678]
+* a35fa6f  build: Generify custom project info props  [someone5678]
 
 #### device/parasite/sepolicy
 
@@ -171,13 +129,37 @@
 * 2537889  common: allow mediaserver to get media_wfd_prop  [Pulkit077]
 * dc0dc93  mediatek: Add sepolicy for mediatek livedisplay  [Aayush Gupta]
 
-#### device/xiaomi/sm6150-common
+#### device/sony/sm8550-common
 
-* 15e411f  permisive  [someone5678]
-
-#### device/xiaomi/sweet
-
-* f159d5d  Disable updatable APEX  [someone5678]
+* 0b1d6ba  sm8550-common: Enable puffdiff for ota compression  [someone5678]
+* 107850a  sm8550-common: Enable zucchini for ota compression  [someone5678]
+* 564e045  sm8550-common: Setup sim restart shell script  [egaunnac]
+* a3052f4  sm8550-common: update sf related props  [SGCMarkus]
+* 7ae5895  sm8550-common: Setup additional options for ota  [someone5678]
+* 4e48be9  sm8550-common: BOARD_CHARGER_ENABLE_SUSPEND becomes ro.charger.enable_suspend  [Redick Lin]
+* 92450f6  sm8550-common: Include mainline common board config  [someone5678]
+* 26f169d  sm8550-common: Enable watchdog timeout loop breaker  [someone5678]
+* 76dfa99  sm8550-common: props: Sync suspend properties to gs201  [someone5678]
+* 06d7ac6  sm8550-common: Reduce shutdown wait time to 0 sec  [someone5678]
+* 0c7f1f2  sm8550-common: properties: Disable continuous transaction tracing on all build types  [SamarV-121]
+* d0ec906  sm8550-common: Force device to treat 170M as sRGB in SF  [Alec Mouri]
+* bd79039  sm8550-common: props: Switch to AutoSingleLayer Android 13 Setting  [johnmart19]
+* 5392703  sm8550-common: props: Enable incremental FS feature.  [P.Adarsh Reddy]
+* 3672160  sm8550-common: properties: Disable Async MTE on System Server  [Vinay Verma]
+* 4649550  sm8550-common: properties: Kill off IMS logspam with fire  [Adithya R]
+* 3017418  sm8550-common: Remove FM Tuner from audio input devices  [iovxw]
+* 2d39292  fixup! sm8550-common: configs: audio: Add hotword input for hotword mic concurrency  [someone5678]
+* b327c1b  sm8550-common: configs: audio: Add hotword input for hotword mic concurrency  [Jasmine Cha]
+* 90f087d  sm8550-common: Don't set ro.com.android.dataroaming  [someone5678]
+* e44499f  update-sha1sums: Also recognize '- From' as needSHA1  [someone5678]
+* 9081190  sm8550-common: Update ERoFS LZ4HC compression rate to 12  [someone5678]
+* f5c1988  sm8550-common: Add 34 to PRODUCT_EXTRA_VNDK_VERSIONS  [someone5678]
+* 95f907a  sm8550-common: Set VNDK versions  [someone5678]
+* f05da0a  sm8550-common: Patch configs to drop NFC logging levels  [LuK1337]
+* 77b5d9e  sm8550-common: Allow extracting only firmware images  [Bruno Martins]
+* 1ff4340  sm8550-common: Add firmware extraction support  [Michael Bestas]
+* 1c73739  Revert "sm8550-common: Build powershare HAL"  [someone5678]
+* fa19341  Revert "sm8550-common: Configure common Powershare HIDL"  [someone5678]
 
 #### frameworks/base
 
@@ -545,12 +527,45 @@
 * 1f25053  SystemUI: Do not use new lockscreen layout for bypass  [Ethan Halsall]
 * da29f19  SettingLib: Add deep sleep info to uptime preference  [maxwen]
 
+#### hardware/lineage/compat
+
+* 00551f4  compat: Add camera provider shim  [R0rt1z2]
+
+#### kernel/sony/sm8550
+
+* 7a11d62  drivers: misc: Import KernelSU  [someone5678]
+
 #### packages/apps/Settings
 
 * f4b7479  Settings: Fix regulatory info availability check  [Ido Ben-Hur]
 
+#### packages/apps/Updater
+
+* 04c80bb  Updater: Use system fonts  [someone5678]
+* 68b4812  Updater: Update resources  [someone5678]
+
 #### vendor/aosp
 
+* b7c9bf2  vendor: overlay: Set default camera app to Aperture in multiple GApps  [someone5678]
+* 59896ef  vendor: Migrate vendor.camera.aux.packagelist to sdk overlay  [Ivan Vecera]
+* 30acec3  vendor: Opt-in to shipping full recovery image by default  [Jarl-Penguin]
+* d60a94f  Revert "config: BoardConfigReservedSize: Prevent overlayfs on remount"  [LuK1337]
+* 2e89078  vendor: Move EXCLUDE_SYSTEMUI_TESTS to optimisation.mk  [someone5678]
+* 3bf3979  vendor: Also disable ro.adb.secure.recovery on eng build  [someone5678]
+* 295c9d8  vendor: PRODUCT_SYSTEM_DEFAULT_PROPERTIES -> PRODUCT_SYSTEM_PROPERTIES  [someone5678]
+* 9f511e8  vendor: apps: Build Updater  [someone5678]
+* c0260a7  Revert "Hookup SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC"  [Bruno Martins]
+* 2bd283d  config: BoardConfigReservedSize: Prevent overlayfs on remount  [Nolen Johnson]
+* e6b0801  fixup! vendor: art: Add back dex preopt for AOSP FW  [someone5678]
+* b7da60c  apns-conf: Update Vodafone RO mcc="226" mnc="01"  [Ido Ben-Hur]
+* c2cbfae  apn: Add "Samantel" and "Shatelmobile" APNs  [Mohammad Sajad Asadollahi]
+* ccc2f2d  config: Enable settings large screen optimization for tablets  [LuK1337]
+* 232676b  vendor: Disable debugs infos on user build only  [someone5678]
+* 3fd67ee  statix: Reduce system server verbosity  [Mathieu Chartier]
+* a1262a0  vendor: overlay: fmapp2: Correct location  [someone5678]
+* 6552d91  envsetup: cloremote: build got moved to build_repo  [Alexander Martinz]
+* 4dc51f7  vendor: Add aconfig flags extension for AP1A  [danielml]
+* b982bc7  vendor: Set TARGET_RELEASE  [someone5678]
 * 35e74f4  AndroidBlackTheme: Make the QS footer transparent for black theme  [El Dainosor]
 * edc41ba  AndroidBlackTheme: Update colors  [ghostrider-reborn]
 * 1ddf1f4  AndroidBlackTheme: Move color resources to night  [ghostrider-reborn]
@@ -610,28 +625,22 @@
 
 #### device/xiaomi/sm6150-common
 
-* eb5ff07  sm6150-common: Setup broken-rules  [someone5678]
-* 03982e2  sm6150-common: BoardConfig: Set loop.max_part to 8  [someone5678]
-* 044ab69  sm6150-common: Update ERoFS LZ4HC compression rate to 12  [someone5678]
-* 0d0fd13  fixup! sm6150-common: configs: audio: Add hotword input for hotword mic concurrency  [someone5678]
-* 77174bd  sm6150-common: configs: audio: Add hotword input for hotword mic concurrency  [Jasmine Cha]
-* b84345e  sm6150-common: Remove FM Tuner from audio input devices  [iovxw]
-* 9ad4421  sm6150-common: Enable puffdiff for ota compression  [someone5678]
-* 251de03  sm6150-common: Enable zucchini for ota compression  [someone5678]
-* 23ae020  sm6150-common: Setup additional options for ota  [someone5678]
-* 19d2cfe  sm8550-common: overlay: Remove default pinner service  [someone5678]
-* 4ae41ec  sm6150-common: overlay: Wifi: Update targepackage to Google APEX  [someone5678]
-* f46964d  sm6150-common: BoardConfig: Clean-up partition flags  [someone5678]
-* c01a3c2  sm6150-common: Update EROFS PCLUSTER SIZE  [timocapa]
-* a888e43  Drop ext4 for userdata  [kondors1995]
-* 802331f  sm6150-common: Enable LZ4 Compression for ramdisks  [Lisa Liu]
-* c9db8f5  sm6150-common: set erofs pcluster size  [John Galt]
-* 2d4e3a7  sm6150-common: move to erofs  [timocapa]
+* bd1cdce  sm6150-common: Setup broken-rules  [someone5678]
+* ba131e4  sm6150-common: BoardConfig: Set loop.max_part to 8  [someone5678]
+* a02484a  fixup! sm6150-common: configs: audio: Add hotword input for hotword mic concurrency  [someone5678]
+* a95ccde  sm6150-common: configs: audio: Add hotword input for hotword mic concurrency  [Jasmine Cha]
+* 6d089f4  sm6150-common: Remove FM Tuner from audio input devices  [iovxw]
+* 197ca77  sm6150-common: Enable puffdiff for ota compression  [someone5678]
+* 1a4b13e  sm6150-common: Enable zucchini for ota compression  [someone5678]
+* 9fa18b8  sm6150-common: Setup additional options for ota  [someone5678]
+* bf22989  sm8550-common: overlay: Remove default pinner service  [someone5678]
+* e367f94  sm6150-common: overlay: Wifi: Update targepackage to Google APEX  [someone5678]
 * e463f7c  sm6150-common: sm6150.mk -> common.mk  [someone5678]
 * 7f921d3  sm6150-common: Remove LineageOS specific stuffs  [someone5678]
 
 #### device/xiaomi/sweet
 
+* f159d5d  Disable updatable APEX  [someone5678]
 * 14328a6  sweet: releasetools: Flash custom logo img  [someone5678]
 * bcbce36  sweet: include firmware blobs  [someone5678]
 * 94c2fcb  sweet: releasetools: flash vbmeta_system as well  [Akhil Narang]
@@ -645,6 +654,50 @@
 * 44ef034  Set BOOT_SECURITY_PATCH during build  [Garret Kelly]
 * 0976e4f  Set VENDOR_SECURITY_PATCH to platform  [Chris Fries]
 * 39d48c3  sweet: sm6150.mk -> common.mk  [someone5678]
+
+#### packages/apps/KProfiles
+
+* 6394690  KProfiles: Add .gitupstream  [someone5678]
+* 273ea97  KProfiles: Add CleanSpec  [someone5678]
+* 09cdbdc  KProfiles: Migrate MainSwitchBar and Switch to Material3  [Bruno Martins]
+* 4c27014  KProfiles: Clean-ups  [someone5678]
+
+#### packages/resources/devicesettings
+
+* ae91692  Automatic translation import  [PixelExperience Automation]
+* 5457e92  Automatic translation import  [PixelExperience Automation]
+* 985a7ee  Improve powershare strings  [Henrique Silva]
+* 2fbcd25  Automatic translation import  [PixelExperience Automation]
+* 6ea5a91  devicesettings: Add strings for powershare  [LynnrinChan]
+* c1227df  Automatic translation import  [PixelExperience Automation]
+* 4b146e8  Automatic translation import  [PixelExperience Automation]
+* 7fad867  Automatic translation import  [PixelExperience Automation]
+* bdfc5fa  devicesettings: Add strings for Refresh Rate per-app  [chrisw444]
+* 3cee61c  devicesettings: Add strings for CABC and HMB level  [chrisw444]
+* f1c3c97  Automatic translation import  [PixelExperience Automation]
+* 635a07d  Add missing bass booster preset for dirac  [jhenrique09]
+* ba9c26e  devicesettings: Add Enable Dirac string  [Palakurthi Sreekanth]
+* 42b8007  devicesettings: Add strings for doze brightness setting  [EcrosoftXiao]
+* 892bbf7  Restore lib name  [someone5678]
+* bd333a8  Import devicesettings-custom and rename lib  [jhenrique09]
+
+#### vendor/google/pixel-additional
+
+* d145170  pixel-additional: overlay: Override matching Aperture overlays with GCam Go ones  [someone5678]
+
+### 05-03-2024
+
+#### device/qcom/sepolicy_vndr/sm8450
+
+* 99bfc2a  Merge tag 'LA.VENDOR.1.0.r1-25300-WAIPIO.QSSI15.0' into staging/lineage-21.0_merge-LA.VENDOR.1.0.r1-25300-WAIPIO.QSSI15.0  [Michael Bestas]
+
+#### device/sony/pdx234
+
+* 5d3f7d7  pdx234: Drop Google Camera Go support  [someone5678]
+
+#### frameworks/av
+
+* fda1f49  libaudiohal: only call getAudioPort if it is supported.  [jiabin]
 
 #### frameworks/base
 
@@ -879,54 +932,14 @@
 * 0557909  Add missing INTERACT_ACROSS_USERS_FULL permission  [AdrianDC]
 * a384f10  Add "android.permission.READ_PHONE_STATE" to manifest  [Janson Kang]
 
-#### packages/apps/KProfiles
+#### hardware/qcom-caf/sm8150/audio
 
-* 6394690  KProfiles: Add .gitupstream  [someone5678]
-* 273ea97  KProfiles: Add CleanSpec  [someone5678]
-* 09cdbdc  KProfiles: Migrate MainSwitchBar and Switch to Material3  [Bruno Martins]
-* 4c27014  KProfiles: Clean-ups  [someone5678]
+* 7b7df66  audio_amplifier: pass amplifier_device pointer to calibrate as well  [Han Sol Jin]
+* 89af230  audio_amplifier: Call calibration after module open  [Luofan Chen]
 
-#### packages/resources/devicesettings
+#### packages/apps/Aperture
 
-* ae91692  Automatic translation import  [PixelExperience Automation]
-* 5457e92  Automatic translation import  [PixelExperience Automation]
-* 985a7ee  Improve powershare strings  [Henrique Silva]
-* 2fbcd25  Automatic translation import  [PixelExperience Automation]
-* 6ea5a91  devicesettings: Add strings for powershare  [LynnrinChan]
-* c1227df  Automatic translation import  [PixelExperience Automation]
-* 4b146e8  Automatic translation import  [PixelExperience Automation]
-* 7fad867  Automatic translation import  [PixelExperience Automation]
-* bdfc5fa  devicesettings: Add strings for Refresh Rate per-app  [chrisw444]
-* 3cee61c  devicesettings: Add strings for CABC and HMB level  [chrisw444]
-* f1c3c97  Automatic translation import  [PixelExperience Automation]
-* 635a07d  Add missing bass booster preset for dirac  [jhenrique09]
-* ba9c26e  devicesettings: Add Enable Dirac string  [Palakurthi Sreekanth]
-* 42b8007  devicesettings: Add strings for doze brightness setting  [EcrosoftXiao]
-* 892bbf7  Restore lib name  [someone5678]
-* bd333a8  Import devicesettings-custom and rename lib  [jhenrique09]
-
-#### vendor/google/gms
-
-* dff60f4  gms: Use WITH_GMS as guard flag  [someone5678]
-
-#### vendor/google/mainline_modules
-
-* d0adf16  mainline_modules: Use WITH_GMS as guard flag  [someone5678]
-
-#### vendor/google/pixel-additional
-
-* d145170  pixel-additional: overlay: Override matching Aperture overlays with GCam Go ones  [someone5678]
-* a29762d  pixel-additional: Use WITH_GMS as guard flag  [someone5678]
-
-### 05-03-2024
-
-#### device/sony/pdx234
-
-* 5d3f7d7  pdx234: Drop Google Camera Go support  [someone5678]
-
-#### frameworks/av
-
-* fda1f49  libaudiohal: only call getAudioPort if it is supported.  [jiabin]
+* 262ef2e  Aperture: Update CameraX to 1.4.0-alpha05  [LuK1337]
 
 #### packages/apps/Settings
 
@@ -934,16 +947,26 @@
 
 #### vendor/google/gms
 
+* dff60f4  gms: Use WITH_GMS as guard flag  [someone5678]
 * 8d7316b  gms: Fix indentation and clean-ups for setup-makefiles and extract-files  [someone5678]
 * e690a2a  gms: Automatically setup config_googlePlatformSignatures  [someone5678]
 * 82b75b5  gms: Move all packages to presigned  [someone5678]
 * 4f63b1a  gms: Move GooglePackageInstaller to presigned  [someone5678]
 
+#### vendor/google/mainline_modules
+
+* d0adf16  mainline_modules: Use WITH_GMS as guard flag  [someone5678]
+
 #### vendor/google/pixel-additional
 
+* a29762d  pixel-additional: Use WITH_GMS as guard flag  [someone5678]
 * 0e07ea5  pixel-additional: Remove AUX allowlist overlay  [someone5678]
 
 ### 05-02-2024
+
+#### packages/apps/Aperture
+
+* cf3e6b1  Automatic translation import  [LineageOS Infra]
 
 #### packages/resources/devicesettings
 
