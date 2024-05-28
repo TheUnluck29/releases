@@ -16,10 +16,6 @@
 
 * 77d4c5b  EdgeBackGestureHandler: Change back gesture height intervals  [Anushek Prasal]
 
--e #### packages/apps/Updater
-
-* 66f7f8a  Pong Update  [Vimalraj1]
-
 -e #### vendor/aosp
 
 * cfda495  Revert "Implement immersive navigation to navbar no hint overlay"  [someone5678]
@@ -44,6 +40,12 @@
 
 -e ### 05-25-2024
 
+-e #### vendor/qcom/opensource/vibrator
+
+* b8de119  vibrator: Use a better check for primitive effects  [Adithya R]
+
+-e ### 05-24-2024
+
 -e #### bionic
 
 * a755a79  system_properties: pihook: Update  [someone5678]
@@ -51,12 +53,6 @@
 -e #### system/core
 
 * e7442aa  init: Adapt snet spoof changes to A14 QPR2  [someone5678]
-
--e #### vendor/qcom/opensource/vibrator
-
-* b8de119  vibrator: Use a better check for primitive effects  [Adithya R]
-
--e ### 05-24-2024
 
 -e #### vendor/certification
 
