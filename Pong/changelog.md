@@ -1,20 +1,40 @@
 # Pong
 
-### 05-30-2024
-
-### 05-29-2024
-
-#### device/qcom/sepolicy_vndr/sm8450
-
-* 0356464  sepolicy_vndr: Fix avc denials for extcon rules  [chandu078]
+### 05-31-2024
 
 #### frameworks/base
 
-* 07b6413  Allow signature spoofing for microG Companion/Services  [LuK1337]
+* efcc58c  JobSchedulerService:fix arrayIndexOutOfBoundsException to aviod systemServer crash.  [lijilou]
 
-#### hardware/sony
+#### hardware/qcom-caf/common
 
-* ab6b411  XperiaDisplay: Add vendor.semc.hardware.display up to 2.5  [someone5678]
+* 29e63ca  libqti-perfd-client: Add more dummy methods  [someone5678]
+
+#### manifest
+
+* afb908d  [TMP] manifest: parasite: Track hardware/qcom-caf/common diff --git a/snippets/lineage-caf.xml b/snippets/lineage-caf.xml index 378758192..56136b36c 100644  [someone5678]
+
+#### packages/apps/Aperture
+
+* 8d4db99  Aperture: Switch to ZXing-C++  [LuK1337]
+
+#### packages/apps/Settings
+
+* 0ff16ee  DataProcessor: Do not skip and replace screen on component with screen on time  [minaripenguin]
+
+#### vendor/google/gms
+
+* 92f42be  device_config: Update Live Caption model  [aswin7469]
+
+#### vendor/parasite
+
+* 93957a5  PixelPropsUtils: Spoof Gboard and Ai Wallpapers to husky  [Joey]
+
+#### vendor/parasite-signatures
+
+* 0a1f334  common: generate.sh: Allow to skip prompt  [someone5678]
+
+### 05-30-2024
 
 #### vendor/aosp
 
@@ -24,15 +44,7 @@
 
 * a2371ee  TurboAdapter_NoBatt: Throws remote exception  [someone5678]
 
-#### vendor/parasite
-
-* fc14ef3  PixelPropsUtils: Spoof Gboard to Husky  [Joey]
-
-#### vendor/parasite-signatures
-
-* da49a56  Update README.md  [someone5678]
-
-### 05-28-2024
+### 05-29-2024
 
 #### build/make
 
@@ -42,17 +54,27 @@
 
 * fd2ec63  allowlists: support inline signing for U [1/2]  [John Galt]
 
-#### external/exfatprogs
+#### device/qcom/sepolicy_vndr/sm8450
 
-* a7b8f72  Fixing issues in METADATA file external_updater expects string in METADATA file but it couldn't find any to update the project.  [Sadaf Ebrahimi]
+* 0356464  sepolicy_vndr: Fix avc denials for extcon rules  [chandu078]
 
-#### vendor/google/gms
+#### hardware/sony
 
-* 1925d8b  gms: overlay: Properly override SettingsLib's headline font  [someone5678]
+* ab6b411  XperiaDisplay: Add vendor.semc.hardware.display up to 2.5  [someone5678]
 
 #### vendor/google/mainline_modules
 
 * 3eb5d72  mainline_modules: Enable virtualization support by default  [someone5678]
+
+### 05-28-2024
+
+#### device/qcom/sepolicy_vndr/legacy-um
+
+* 326c4a9  msmnile: Label multiimgqti_[ab]  [Sebastiano Barezzi]
+
+#### external/exfatprogs
+
+* a7b8f72  Fixing issues in METADATA file external_updater expects string in METADATA file but it couldn't find any to update the project.  [Sadaf Ebrahimi]
 
 #### vendor/google/pixel-framework
 
@@ -60,33 +82,11 @@
 
 ### 05-27-2024
 
-#### device/qcom/sepolicy_vndr/legacy-um
-
-* 326c4a9  msmnile: Label multiimgqti_[ab]  [Sebastiano Barezzi]
-
 #### lineage/scripts
 
 * 1a0a5e8  build-webview: Update default webview to 125.0.6422.113  [Kevin F. Haggerty]
 
-#### manifest
-
-* b68491d  manifest: parasite: Track vendor/parasite-signatures  [someone5678]
-
 #### vendor/parasite-prebuilts
 
 * 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
-
-### 05-26-2024
-
-#### hardware/qcom-caf/thermal
-
-* a1bb7a3  thermal-hal: Enable thermal_hal support for yupik variants  [Gopala Krishna Nuthaki]
-
-#### prebuilts/tools-parasite
-
-* ee103e9  tools-parasite: Add avbroot  [someone5678]
-
-#### vendor/google/dexopt_profiles
-
-* aebb8a9  dexopt_profiles: Update  [someone5678]
 
