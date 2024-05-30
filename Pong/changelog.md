@@ -1,56 +1,92 @@
--e # Pong
+# Pong
 
--e ### 05-28-2024
+### 05-30-2024
 
--e ### 05-27-2024
+### 05-29-2024
 
--e #### vendor/parasite
+#### device/qcom/sepolicy_vndr/sm8450
 
-* 0479f7d  parasite: Include signature configs if exists  [someone5678]
+* 0356464  sepolicy_vndr: Fix avc denials for extcon rules  [chandu078]
 
--e #### vendor/parasite-prebuilts
+#### frameworks/base
+
+* 07b6413  Allow signature spoofing for microG Companion/Services  [LuK1337]
+
+#### hardware/sony
+
+* ab6b411  XperiaDisplay: Add vendor.semc.hardware.display up to 2.5  [someone5678]
+
+#### vendor/aosp
+
+* 8f6ab31  soong: Add power libperfmgr extension config  [Arian]
+
+#### vendor/google/pixel-additional
+
+* a2371ee  TurboAdapter_NoBatt: Throws remote exception  [someone5678]
+
+#### vendor/parasite
+
+* fc14ef3  PixelPropsUtils: Spoof Gboard to Husky  [Joey]
+
+#### vendor/parasite-signatures
+
+* da49a56  Update README.md  [someone5678]
+
+### 05-28-2024
+
+#### build/make
+
+* fd072b4  make: sysprop.mk: Treat dev-keys as release-keys  [Ido Ben-Hur]
+
+#### build/soong
+
+* fd2ec63  allowlists: support inline signing for U [1/2]  [John Galt]
+
+#### external/exfatprogs
+
+* a7b8f72  Fixing issues in METADATA file external_updater expects string in METADATA file but it couldn't find any to update the project.  [Sadaf Ebrahimi]
+
+#### vendor/google/gms
+
+* 1925d8b  gms: overlay: Properly override SettingsLib's headline font  [someone5678]
+
+#### vendor/google/mainline_modules
+
+* 3eb5d72  mainline_modules: Enable virtualization support by default  [someone5678]
+
+#### vendor/google/pixel-framework
+
+* b35f1b1  Revert "SettingsGoogle: Apply R8 optimization based on SystemUI"  [someone5678]
+
+### 05-27-2024
+
+#### device/qcom/sepolicy_vndr/legacy-um
+
+* 326c4a9  msmnile: Label multiimgqti_[ab]  [Sebastiano Barezzi]
+
+#### lineage/scripts
+
+* 1a0a5e8  build-webview: Update default webview to 125.0.6422.113  [Kevin F. Haggerty]
+
+#### manifest
+
+* b68491d  manifest: parasite: Track vendor/parasite-signatures  [someone5678]
+
+#### vendor/parasite-prebuilts
 
 * 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
 
--e #### vendor/parasite-signatures
+### 05-26-2024
 
-* 035674e  Update README.md  [someone5678]
+#### hardware/qcom-caf/thermal
 
--e ### 05-26-2024
+* a1bb7a3  thermal-hal: Enable thermal_hal support for yupik variants  [Gopala Krishna Nuthaki]
 
--e #### frameworks/base
-
-* 77d4c5b  EdgeBackGestureHandler: Change back gesture height intervals  [Anushek Prasal]
-
--e #### vendor/aosp
-
-* cfda495  Revert "Implement immersive navigation to navbar no hint overlay"  [someone5678]
-
--e #### vendor/google/pixel-framework
-
-* b69006c  SystemUIGoogle: Do not shrink resources  [minaripenguin]
-
--e ### 05-25-2024
-
--e #### build/make
-
-* 82fdc52  build: core: Add support for setting ota package key  [someone5678]
-
--e #### prebuilts/tools-parasite
+#### prebuilts/tools-parasite
 
 * ee103e9  tools-parasite: Add avbroot  [someone5678]
 
--e ### 05-24-2024
+#### vendor/google/dexopt_profiles
 
--e #### bionic
-
-* a755a79  system_properties: pihook: Update  [someone5678]
-
--e #### system/core
-
-* e7442aa  init: Adapt snet spoof changes to A14 QPR2  [someone5678]
-
--e #### vendor/qcom/opensource/vibrator
-
-* b8de119  vibrator: Use a better check for primitive effects  [Adithya R]
+* aebb8a9  dexopt_profiles: Update  [someone5678]
 
