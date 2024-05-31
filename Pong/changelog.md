@@ -2,6 +2,12 @@
 
 ### 05-31-2024
 
+#### packages/apps/Settings
+
+* 454c0a8  DataProcessor: Do not skip and replace screen on component with screen on time  [minaripenguin]
+
+### 05-30-2024
+
 #### frameworks/base
 
 * efcc58c  JobSchedulerService:fix arrayIndexOutOfBoundsException to aviod systemServer crash.  [lijilou]
@@ -18,10 +24,6 @@
 
 * 8d4db99  Aperture: Switch to ZXing-C++  [LuK1337]
 
-#### packages/apps/Settings
-
-* 0ff16ee  DataProcessor: Do not skip and replace screen on component with screen on time  [minaripenguin]
-
 #### vendor/google/gms
 
 * 92f42be  device_config: Update Live Caption model  [aswin7469]
@@ -34,7 +36,11 @@
 
 * 0a1f334  common: generate.sh: Allow to skip prompt  [someone5678]
 
-### 05-30-2024
+### 05-29-2024
+
+#### device/qcom/sepolicy_vndr/sm8450
+
+* 0356464  sepolicy_vndr: Fix avc denials for extcon rules  [chandu078]
 
 #### vendor/aosp
 
@@ -44,7 +50,7 @@
 
 * a2371ee  TurboAdapter_NoBatt: Throws remote exception  [someone5678]
 
-### 05-29-2024
+### 05-28-2024
 
 #### build/make
 
@@ -54,9 +60,9 @@
 
 * fd2ec63  allowlists: support inline signing for U [1/2]  [John Galt]
 
-#### device/qcom/sepolicy_vndr/sm8450
+#### external/exfatprogs
 
-* 0356464  sepolicy_vndr: Fix avc denials for extcon rules  [chandu078]
+* a7b8f72  Fixing issues in METADATA file external_updater expects string in METADATA file but it couldn't find any to update the project.  [Sadaf Ebrahimi]
 
 #### hardware/sony
 
@@ -66,27 +72,13 @@
 
 * 3eb5d72  mainline_modules: Enable virtualization support by default  [someone5678]
 
-### 05-28-2024
-
-#### device/qcom/sepolicy_vndr/legacy-um
-
-* 326c4a9  msmnile: Label multiimgqti_[ab]  [Sebastiano Barezzi]
-
-#### external/exfatprogs
-
-* a7b8f72  Fixing issues in METADATA file external_updater expects string in METADATA file but it couldn't find any to update the project.  [Sadaf Ebrahimi]
-
 #### vendor/google/pixel-framework
 
 * b35f1b1  Revert "SettingsGoogle: Apply R8 optimization based on SystemUI"  [someone5678]
 
 ### 05-27-2024
 
-#### lineage/scripts
+#### device/qcom/sepolicy_vndr/legacy-um
 
-* 1a0a5e8  build-webview: Update default webview to 125.0.6422.113  [Kevin F. Haggerty]
-
-#### vendor/parasite-prebuilts
-
-* 4d47336  parasite-prebuilts: Ship Gramophone by default  [someone5678]
+* 326c4a9  msmnile: Label multiimgqti_[ab]  [Sebastiano Barezzi]
 
